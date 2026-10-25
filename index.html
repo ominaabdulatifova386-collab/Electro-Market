@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroMarket — интернет-магазин электроники</title>
+
+    <!-- Google Fonts: Unbounded для заголовков, Manrope для текста -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <!-- ========== 1. ШАПКА ========== -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#top" class="logo">
+                <span class="logo__icon">⚡</span>
+                Electro<span class="logo__accent">Market</span>
+            </a>
+
+            <nav class="nav">
+                <a href="#top" class="nav__link">Главная</a>
+                <a href="#catalog" class="nav__link">Каталог</a>
+                <a href="#sale" class="nav__link">Акции</a>
+                <a href="#about" class="nav__link">О нас</a>
+                <a href="#contacts" class="nav__link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ========== 2. ГЛАВНЫЙ ЭКРАН ========== -->
+        <section class="hero">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <span class="hero__tag">Новая коллекция 2026</span>
+                    <h1 class="hero__title">Техника для учебы, работы и жизни</h1>
+                    <p class="hero__text">Современная электроника по доступным ценам</p>
+                    <div class="hero__buttons">
+                        <a href="#catalog" class="btn btn--primary">Смотреть товары</a>
+                        <a href="#about" class="btn btn--outline">Узнать больше</a>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__circle">
+                        <span class="hero__emoji hero__emoji--main">💻</span>
+                        <span class="hero__emoji hero__emoji--1">📱</span>
+                        <span class="hero__emoji hero__emoji--2">🎧</span>
+                        <span class="hero__emoji hero__emoji--3">⌚</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 3. КАТЕГОРИИ ========== -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Категории</h2>
+
+                <div class="categories">
+                    <a href="#catalog" class="category">
+                        <span class="category__icon">💻</span>
+                        <h3 class="category__name">Ноутбуки</h3>
+                        <p class="category__count">24 модели</p>
+                    </a>
+                    <a href="#catalog" class="category">
+                        <span class="category__icon">📱</span>
+                        <h3 class="category__name">Смартфоны</h3>
+                        <p class="category__count">36 моделей</p>
+                    </a>
+                    <a href="#catalog" class="category">
+                        <span class="category__icon">🎧</span>
+                        <h3 class="category__name">Наушники</h3>
+                        <p class="category__count">18 моделей</p>
+                    </a>
+                    <a href="#catalog" class="category">
+                        <span class="category__icon">⌨️</span>
+                        <h3 class="category__name">Аксессуары</h3>
+                        <p class="category__count">50+ товаров</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 4. КАТАЛОГ ТОВАРОВ ========== -->
+        <section class="section section--gray" id="catalog">
+            <div class="container">
+                <h2 class="section__title">Популярные товары</h2>
+
+                <div class="products">
+
+                    <article class="product">
+                        <span class="badge badge--sale">−15%</span>
+                        <div class="product__image product__image--blue">💻</div>
+                        <h3 class="product__name">Ноутбук</h3>
+                        <p class="product__desc">15.6", Intel Core i5, 16 ГБ ОЗУ, SSD 512 ГБ — для учебы и работы.</p>
+                        <div class="product__bottom">
+                            <div class="product__prices">
+                                <span class="product__old-price">52&nbsp;000 сом</span>
+                                <span class="product__price">45&nbsp;000 сом</span>
+                            </div>
+                            <a href="#contacts" class="btn btn--buy">Купить</a>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <span class="badge badge--hit">ХИТ</span>
+                        <div class="product__image product__image--purple">📱</div>
+                        <h3 class="product__name">Смартфон</h3>
+                        <p class="product__desc">AMOLED-экран 6.7", камера 108 Мп, аккумулятор 5000 мАч.</p>
+                        <div class="product__bottom">
+                            <div class="product__prices">
+                                <span class="product__price">28&nbsp;000 сом</span>
+                            </div>
+                            <a href="#contacts" class="btn btn--buy">Купить</a>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <span class="badge badge--sale">−20%</span>
+                        <div class="product__image product__image--pink">🎧</div>
+                        <h3 class="product__name">Беспроводные наушники</h3>
+                        <p class="product__desc">Bluetooth 5.3, шумоподавление, до 30 часов работы.</p>
+                        <div class="product__bottom">
+                            <div class="product__prices">
+                                <span class="product__old-price">3&nbsp;200 сом</span>
+                                <span class="product__price">2&nbsp;500 сом</span>
+                            </div>
+                            <a href="#contacts" class="btn btn--buy">Купить</a>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="product__image product__image--green">🖱️</div>
+                        <h3 class="product__name">Игровая мышь</h3>
+                        <p class="product__desc">Сенсор 12 000 DPI, RGB-подсветка, 7 программируемых кнопок.</p>
+                        <div class="product__bottom">
+                            <div class="product__prices">
+                                <span class="product__price">1&nbsp;200 сом</span>
+                            </div>
+                            <a href="#contacts" class="btn btn--buy">Купить</a>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="product__image product__image--orange">⌨️</div>
+                        <h3 class="product__name">Клавиатура</h3>
+                        <p class="product__desc">Механическая, тихие переключатели, русская раскладка.</p>
+                        <div class="product__bottom">
+                            <div class="product__prices">
+                                <span class="product__price">2&nbsp;000 сом</span>
+                            </div>
+                            <a href="#contacts" class="btn btn--buy">Купить</a>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <span class="badge badge--sale">−17%</span>
+                        <div class="product__image product__image--blue">🖥️</div>
+                        <h3 class="product__name">Монитор</h3>
+                        <p class="product__desc">27", IPS-матрица, 2K, частота 144 Гц — четкая картинка.</p>
+                        <div class="product__bottom">
+                            <div class="product__prices">
+                                <span class="product__old-price">18&nbsp;000 сом</span>
+                                <span class="product__price">15&nbsp;000 сом</span>
+                            </div>
+                            <a href="#contacts" class="btn btn--buy">Купить</a>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <span class="badge badge--hit">ХИТ</span>
+                        <div class="product__image product__image--purple">⌚</div>
+                        <h3 class="product__name">Smart Watch</h3>
+                        <p class="product__desc">Пульс, шаги, сон, уведомления. Защита от воды IP68.</p>
+                        <div class="product__bottom">
+                            <div class="product__prices">
+                                <span class="product__price">5&nbsp;500 сом</span>
+                            </div>
+                            <a href="#contacts" class="btn btn--buy">Купить</a>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="product__image product__image--green">🔋</div>
+                        <h3 class="product__name">Power Bank</h3>
+                        <p class="product__desc">20 000 мАч, быстрая зарядка, два USB-порта и Type-C.</p>
+                        <div class="product__bottom">
+                            <div class="product__prices">
+                                <span class="product__price">1&nbsp;800 сом</span>
+                            </div>
+                            <a href="#contacts" class="btn btn--buy">Купить</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 5. АКЦИЯ ========== -->
+        <section class="section" id="sale">
+            <div class="container">
+                <div class="promo">
+                    <div class="promo__content">
+                        <span class="promo__label">🔥 Горячее предложение</span>
+                        <h2 class="promo__title">Скидки до 30%</h2>
+                        <p class="promo__text">Только на этой неделе! Успейте приобрести технику по специальной цене.</p>
+                        <a href="#catalog" class="btn btn--dark">Посмотреть акции</a>
+                    </div>
+                    <div class="promo__percent">%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 6. ПОЧЕМУ ВЫБИРАЮТ НАС ========== -->
+        <section class="section section--gray">
+            <div class="container">
+                <h2 class="section__title">Почему выбирают нас?</h2>
+
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature__icon">🚚</span>
+                        <h3 class="feature__title">Быстрая доставка</h3>
+                        <p class="feature__text">Привезём заказ по городу в день покупки, в регионы — за 2–3 дня.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature__icon">🛡️</span>
+                        <h3 class="feature__title">Гарантия качества</h3>
+                        <p class="feature__text">Только оригинальная техника с официальной гарантией до 2 лет.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature__icon">💰</span>
+                        <h3 class="feature__title">Доступные цены</h3>
+                        <p class="feature__text">Работаем напрямую с поставщиками, поэтому цены ниже рыночных.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature__icon">☎️</span>
+                        <h3 class="feature__title">Поддержка клиентов</h3>
+                        <p class="feature__text">Консультанты помогут выбрать технику и ответят на любые вопросы.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 7. О НАС ========== -->
+        <section class="section" id="about">
+            <div class="container about">
+                <div class="about__text">
+                    <h2 class="section__title section__title--left">О нас</h2>
+                    <p>ElectroMarket — это современный магазин электроники, который работает для студентов, специалистов и всех, кто ценит качественную технику.</p>
+                    <p>Мы тщательно отбираем каждый товар и сотрудничаем только с проверенными производителями. В нашем каталоге — ноутбуки, смартфоны, наушники и аксессуары на любой бюджет.</p>
+                    <p>Наша цель — сделать покупку техники простой, быстрой и выгодной. Более 5000 довольных покупателей уже выбрали ElectroMarket!</p>
+                </div>
+
+                <div class="about__stats">
+                    <div class="stat">
+                        <span class="stat__number">5000+</span>
+                        <span class="stat__label">покупателей</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">300+</span>
+                        <span class="stat__label">товаров</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">5 лет</span>
+                        <span class="stat__label">на рынке</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">24/7</span>
+                        <span class="stat__label">онлайн-заказы</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 8. ФОРМА + 9. КОНТАКТЫ ========== -->
+        <section class="section section--gray" id="contacts">
+            <div class="container">
+                <h2 class="section__title">Связаться с нами</h2>
+
+                <div class="contact">
+                    <form class="form" action="#" method="post">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Имя</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Телефон</label>
+                            <input type="tel" id="phone" name="phone" class="form__input" placeholder="+996 ___ ___ ___" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="example@mail.com">
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Сообщение</label>
+                            <textarea id="message" name="message" class="form__input form__textarea" rows="5" placeholder="Напишите ваш вопрос..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Отправить</button>
+                    </form>
+
+                    <div class="contacts">
+                        <h3 class="contacts__title">Контакты</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <span class="contacts__icon">📍</span>
+                                <div><b>Адрес:</b> г. Манас</div>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__icon">📞</span>
+                                <div><b>Телефон:</b> +996 XXX XXX XXX</div>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__icon">✉️</span>
+                                <div><b>Email:</b> <a href="mailto:info@electromarket.kg">info@electromarket.kg</a></div>
+                            </li>
+                            <li class="contacts__item">
+                                <span class="contacts__icon">🕐</span>
+                                <div><b>Время работы:</b> 09:00–18:00</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== 10. ПОДВАЛ ========== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="#top" class="logo logo--light">
+                <span class="logo__icon">⚡</span>
+                Electro<span class="logo__accent">Market</span>
+            </a>
+
+            <nav class="footer__nav">
+                <a href="#top">Главная</a>
+                <a href="#catalog">Каталог</a>
+                <a href="#about">О нас</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+
+            <p class="footer__copy">© 2026 ElectroMarket. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Кнопка «Наверх» (без JavaScript — обычная ссылка-якорь) -->
+    <a href="#top" class="to-top" title="Наверх">↑</a>
+
+</body>
+</html>
